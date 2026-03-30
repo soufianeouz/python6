@@ -3,6 +3,7 @@ from alchemy.grimoire import validate_ingredients, record_spell
 
 print()
 print("=== Circular Curse Breaking ===\n")
+print("Testing ingredient validation:")
 print(f'validate_ingredients("fire air"): {validate_ingredients("fire air")}')
 print(f'validate_ingredients("dragon scales"): {validate_ingredients("dragon scales")}')
 print()
@@ -13,7 +14,6 @@ print(f'record_spell("Dark Magic", "shadow"): {record_spell("Dark Magic", "shado
 print()
 
 print("Testing late import technique:")
-# print('record_spell("Lightning", "air"):')
 print(f'record_spell("Lightning", "air"): {record_spell("Lightning", "air")}')
 print()
 print("Circular dependency curse avoided using late imports!")
